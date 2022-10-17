@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body{
+            background-color: #000;
+            color: white;
+            width: 100%;
+            height: 100%;
+        }
+        .container1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100%;
+        }
+        @media screen and (min-width:300px){
+            .clock{
+            font-size: 50px;
+            }
+        }
+        @media screen and (min-width:580px){
+            .clock{
+            font-size: 100px;
+            }
+        }
+        @media screen and (min-width:846px){
+            .clock{
+            font-size: 150px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container1 container-fluid">
+        <div>
+            <h1 class="clock text-center" id="showDC"></h1>
+        </div>
+    </div>
+
+
+
+    <script>
+        window.onload = function (){
+            getDigitalClock();
+        }
+        function getDigitalClock(){
+            let today = new Date();
+            let hour = today.getHours();
+            let min = today.getMinutes();
+            let sec = today.getSeconds();
+            if(min<10){
+                min = "0" + min; 
+            }
+            if(sec<10){
+                sec = "0" + sec; 
+            }
+            if(hour>11){
+                text2 = hour+":"+min+":"+sec +" PM";
+                }
+                else{
+                text2 = hour+":"+min+":"+sec +" AM"; 
+                }
+
+        // let text2 = hour+":"+min+":"+sec +"";
+        document.getElementById("showDC").innerHTML=text2;
+        setTimeout(function(){getDigitalClock()},1000);
+        }
+
+
+    </script>
+</body>
+</html>

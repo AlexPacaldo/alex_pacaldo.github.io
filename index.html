@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Alex Pacaldo - Full-Stack Web Developer</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+        }
+        .container1{
+            display: flex;
+            flex-direction: column;
+        }
+        nav{
+            display: flex;
+            flex-direction: row;
+            min-height: 7vh;
+            align-items: center;
+            border-bottom: 1px solid rgba(91, 91, 91, 0.217);
+            background-color: white;
+        }
+        nav a{
+            text-decoration: none;
+        }
+        .navName{
+            font-size: 17px;
+            font-weight: 600;
+        }
+        .navButts{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+        .navButts a{
+            color: rgb(91, 91, 91);;
+        }
+        .navButts a:hover{
+            padding: 5px;
+            color: black;
+            border-bottom: 1px solid black;
+        }
+        .navSocialMedia{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            display: none;
+        }
+        .navSocialMedia a{
+            color: black;
+        }
+        .navSocialMedia a:hover{
+            padding: 4px 6px;
+            background-color: black;
+            border: 1px solid black;
+            border-radius: 50%;
+            color: white;
+        }
+        .backgroundArticle{
+            background-color: white;
+        }
+        .articlePic{
+            width:100%; 
+            height:100%;
+        }
+        footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 7vh;
+            border-top: 1px solid rgba(91, 91, 91, 0.217);
+            background-color: white;
+        }
+        .footerSocialMedia{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        .footerSocialMedia a{
+            color: black;
+        }
+        .footerSocialMedia a:hover{
+            padding: 4px 6px;
+            background-color: black;
+            border: 1px solid black;
+            border-radius: 50%;
+            color: white;
+        }
+        main article{
+            min-height: 93vh;
+            display: flex;
+            align-items: center;
+        }
+        .article1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        main aside{
+            background-color: #cdcdcdc0;
+            flex: 1;
+        }
+        .carousel-item{
+            background-color: #000;
+        }
+        .carousel-caption h2{
+            background: rgb(0, 0, 0);
+            opacity: 0.8;
+            border-radius: 10%;
+        }
+
+        @media screen and (min-width:768px){
+            .navButts{
+                flex-direction: row;
+            }
+            .navSocialMedia{
+                display: flex;
+            }
+            .article1{
+                flex-direction: row;
+            }
+            .articlePic{
+                width:550px; 
+                height:500px;
+            }
+        }
+    </style>
+</head>
+<body style="background-color: #000;">
+    <div class="container1">
+        <nav class="navbar sticky-top navbar-expand-md navbar-light px-4 px-md-5">
+            <div class="navName">
+                ALEX PACALDO
+            </div>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar_collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbar_collapse">
+                <div class="navButts py-2 py-md-1">
+                    <div><a href="index.html"><b>Home</b></a></div>
+                    <div><a href="about.html">About</a></div>
+                    <div><a href="works.html">Works</a></div>
+                    <div><a href="contact.html">Contact</a></div>
+                </div>
+            </div>
+            <div class="navSocialMedia">
+                <div><a href="https://www.facebook.com/alex.pacaldo.14/"><i class="bi bi-facebook"></i></a></div>
+                <div><a href="https://github.com/AlexPacaldo"><i class="bi bi-github"></i></a></div>
+                <div><a href="mailto:alexpacaldo1105@gmail.com?subject = Feedback&body = Message"><i class="bi bi-envelope-fill"></i></a></div>
+            </div>
+        </nav>
+        <main>
+            <article class="backgroundArticle">
+                <div class="container-fluid article1">
+                    <div class="text-center py-1 py-md-1">
+                        <h2 class="display-6 text-dark">HAVE AN IDEA IN MIND?<br>
+                            LET'S MAKE IT HAPPEN!
+                        </h2>
+                        <h5 style="color: rgb(128, 128, 128);">Meet Alex Pacaldo, A 19-year-old web developer</h5>
+                        <br>
+                        <a class="btn btn-dark" href="contact.html" role="button">HIRE ME!</a>
+                    </div>
+                    <div><img src="img/home/CompGuy.png" alt="" class="articlePic"></div>
+                </div>
+            </article>
+            <h1 class="py-3 mx-5 text-white">Recent Projects</h1>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <h2 class="text-white text-center">Cycling E Magazine</h2>
+                    <img src="img/home/lapPhonerekta.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <h2 class="text-white text-center">E Portfolio</h2>
+                    <img src="img/home/lapPhoneEport.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <h2 class="text-white text-center">Digital Clock</h2>
+                    <img src="img/home/lapPhoneDigiClock.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </main>
+        <footer>
+            <div class="footerSocialMedia">
+                <div><a href="https://www.facebook.com/alex.pacaldo.14/"><i class="bi bi-facebook"></i></a></div>
+                <div><a href="https://github.com/AlexPacaldo"><i class="bi bi-github"></i></a></div>
+                <div><a href="mailto:alexpacaldo1105@gmail.com?subject = Feedback&body = Message"><i class="bi bi-envelope-fill"></i></a></div>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
+

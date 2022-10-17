@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Works | Alex Pacaldo - Full-Stack Web Developer</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+        }
+        .container1{
+            display: flex;
+            flex-direction: column;
+        }
+        nav{
+            display: flex;
+            flex-direction: row;
+            min-height: 7vh;
+            align-items: center;
+            border-bottom: 1px solid rgba(91, 91, 91, 0.217);
+            background-color: white;
+        }
+        nav a{
+            text-decoration: none;
+        }
+        .navName{
+            font-size: 17px;
+            font-weight: 600;
+        }
+        .navButts{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+        }
+        .navButts a{
+            color: rgb(91, 91, 91);;
+        }
+        .navButts a:hover{
+            padding: 5px;
+            color: black;
+            border-bottom: 1px solid black;
+        }
+        .navSocialMedia{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            display: none;
+        }
+        .navSocialMedia a{
+            color: black;
+        }
+        .navSocialMedia a:hover{
+            padding: 4px 6px;
+            background-color: black;
+            border: 1px solid black;
+            border-radius: 50%;
+            color: white;
+        }
+        .articleCont{
+            width: 100%;
+        }
+        .gridCont{
+            border: 1px solid rgba(91, 91, 91, 0.217);
+        }
+        .hover01 figure img {
+            opacity: 1;
+            -webkit-transform: scale(0.99);
+            transform: scale(0.99);
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+        }
+        .hover01 figure:hover img {
+            opacity: .5;
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+        }
+        footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 7vh;
+            border-top: 1px solid rgba(91, 91, 91, 0.217);
+            background-color: white;
+        }
+        .footerSocialMedia{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        .footerSocialMedia a{
+            color: black;
+        }
+        .footerSocialMedia a:hover{
+            padding: 4px 6px;
+            background-color: black;
+            border: 1px solid black;
+            border-radius: 50%;
+            color: white;
+        }
+        main article{
+            min-height: 93vh;
+        }
+        @media screen and (min-width:500px){
+            .articleCont{
+            width: 950px;    
+            }
+        }
+        @media screen and (min-width:768px){
+            .navButts{
+                flex-direction: row;
+            }
+            .navSocialMedia{
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <nav class="navbar sticky-top navbar-expand-md navbar-light px-4 px-md-5">
+            <div class="navName">
+                ALEX PACALDO
+            </div>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar_collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbar_collapse">
+                <div class="navButts py-2 py-md-1">
+                    <div><a href="index.html">Home</a></div>
+                    <div><a href="about.html">About</a></div>
+                    <div><a href="works.html"><b>Works</b></a></div>
+                    <div><a href="contact.html">Contact</a></div>
+                </div>
+            </div>
+            <div class="navSocialMedia">
+                <div><a href="https://www.facebook.com/alex.pacaldo.14/"><i class="bi bi-facebook"></i></a></div>
+                <div><a href="https://github.com/AlexPacaldo"><i class="bi bi-github"></i></a></div>
+                <div><a href="mailto:alexpacaldo1105@gmail.com?subject = Feedback&body = Message"><i class="bi bi-envelope-fill"></i></a></div>
+            </div>
+        </nav>
+        <main>
+            <article class="d-flex justify-content-center">
+                <div class="articleCont container-fluid">
+                    <div class="py-5">
+                        <h1 class="text-center"><b>My Works</b></h1>
+                        <p class="text-center" style="color: rgb(91, 91, 91);">Projects that i made in 2022</p>
+                        <div class="row row-cols-1 row-cols-md-2 gx-3">
+                            <div>
+                                <div class="hover01 column">
+                                    <div>
+                                        <a href="https://alexpacaldo.github.io/">
+                                        <figure><img src="img/works/Rekta Sikad.png" width="100%" class="gridCont"></figure>
+                                        </a>
+                                        <h5 class="text-center">Cycling E-Magazine</h5>
+                                        <p class="text-center">HTML,CSS,Bootstrap</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="hover01 column">
+                                    <div>
+                                        <a href="index.html">
+                                        <figure><img src="img/works/Eport.png" width="100%" class="gridCont"></figure>
+                                        </a>
+                                        <h5 class="text-center">E Portfolio</h5>
+                                        <p class="text-center">HTML,CSS,Bootstrap</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="hover01 column">
+                                    <div>
+                                        <a href="Digital clock.html">
+                                        <figure><img src="img/works/DigitalClock.png" width="100%" class="gridCont"></figure>
+                                        </a>
+                                        <h5 class="text-center">Digital Clock</h5>
+                                        <p class="text-center">HTML,CSS,Bootstrap,JavaScript</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                            <div class="col"></div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
+        <footer>
+            <div class="footerSocialMedia">
+                <div><a href="https://www.facebook.com/alex.pacaldo.14/"><i class="bi bi-facebook"></i></a></div>
+                <div><a href="https://github.com/AlexPacaldo"><i class="bi bi-github"></i></a></div>
+                <div><a href="mailto:alexpacaldo1105@gmail.com?subject = Feedback&body = Message"><i class="bi bi-envelope-fill"></i></a></div>
+            </div>
+        </footer>
+    </div>
+
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
+
